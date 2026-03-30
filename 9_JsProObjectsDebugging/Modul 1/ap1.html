@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Calculate Discount</h1>
+
+    <!-- JS Files -->
+
+    <script>
+      function calculateDiscountedPrice(price, discountPercent) {
+        const discount = (price * discountPercent) / 100;
+        const finalPrice = Number(price - discount).toFixed(2);
+        return Math.floor(finalPrice);
+      }
+
+      console.log(calculateDiscountedPrice(1000, 10));
+      console.log(calculateDiscountedPrice(1000, 20));
+      console.log(calculateDiscountedPrice(2000, 50));
+      console.log(calculateDiscountedPrice(5000, 10));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="#" onclick="myadd2()">Am dat click</a>
+
+    <script>
+        // function add() {
+        //     let counter = 0;
+        //     function plus() {
+        //         counter += 1; // counter = counter + 1;
+        //     }
+        //     plus();
+        //     return counter;
+        // }
+        // console.log('first', add());
+        // console.log('second', add());
+        // console.log('plus', plus());//error plus is not defined
+
+
+        function add2() {
+            let counter = 0;
+            return function () {
+                counter = counter + 1;
+                console.log(counter);
+                // return counter;
+            };
+        }
+        let myadd2 = add2();
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

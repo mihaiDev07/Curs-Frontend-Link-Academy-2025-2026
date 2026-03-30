@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>AP3</h1>
+    <script>
+      function getCheapProducts(params) {
+        const result = [];
+        params.forEach((element) => {
+          if (element < 50) {
+            result.push(element);
+          }
+        });
+        return result;
+      }
+
+      console.log(getCheapProducts([95, 40, 120, 25, 60]));
+    </script>
+  </body>
+</html>

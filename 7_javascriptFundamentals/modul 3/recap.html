@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="recapPractice.js"></script>
+    <title>Document</title>
+    <style>
+      #promo-input {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        background: rgb(158, 254, 158);
+        border-radius: 10px;
+        border: none;
+      }
+
+      button {
+        font-size: 1.5rem;
+        padding: 0.2rem 1rem;
+        margin-left: 2rem;
+        background: rgb(125, 170, 248);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        transform: scale(105%);
+      }
+      button:active {
+        transform: scale(110%);
+      }
+
+      #display-coupon {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Recapitulare JavaScript Fundamentals</h1>
+    <input type="text" id="promo-input" />
+    <button onclick="validateAndNotify()">APPLY COUPON</button>
+    <p id="display-coupon"></p>
+  </body>
+</html>

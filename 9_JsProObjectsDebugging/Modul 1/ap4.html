@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructor Functions</title>
+  </head>
+  <body>
+    <h1>Constructor Functions</h1>
+
+    <!-- JS Files -->
+    <script>
+      function User(email, password, birthDate, receivePromos, agreeTerms) {
+        this.email = email;
+        this.password = password;
+        this.birthDate = birthDate;
+        this.receivePromos = receivePromos;
+        this.agreeTerms = agreeTerms;
+      }
+
+      const user1 = new User(
+        "mihaiDev@gmail.com",
+        "newYear2026",
+        "17/11/84",
+        false,
+        true,
+      );
+
+      console.log(user1);
+    </script>
+  </body>
+</html>

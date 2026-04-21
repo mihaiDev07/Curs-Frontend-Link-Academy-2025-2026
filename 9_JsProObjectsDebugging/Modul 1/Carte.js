@@ -17,5 +17,5 @@ class Carte {
 }
 
 
-export { Carte };
+export default Carte;
 

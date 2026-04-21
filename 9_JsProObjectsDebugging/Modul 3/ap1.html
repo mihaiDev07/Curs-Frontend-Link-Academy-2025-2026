@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        try {
+            let pret = prompt("Introduceți prețul produsului:");
+            if (isNaN(pret)) {
+                throw new Error("Valoarea introdusă nu este un număr valid.");
+            }
+            else {
+                alert("Prețul introdus este: " + pret);
+            }
+        }
+        catch (error) {
+            console.error("A apărut o eroare: " + error.message);
+        }
+        finally {
+            console.log("Acest bloc se execută întotdeauna.");
+        }
+
+        let a = 5;
+        let b = 10;
+        if (a == 10) {
+            alert("a este egal cu b");
+        }
+        else {
+            alert("a nu este egal cu b");
+        }
+    </script>
+</body>
+
+</html>

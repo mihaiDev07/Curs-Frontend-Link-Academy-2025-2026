@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .box {
+            float: left;
+            width: 50%;
+            padding: 10px;
+
+            /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after,
+        div.box:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .demo {
+            background-color: rgba(255, 0, 0, 0.293);
+            color: #ffffff;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Metode de a adauga CSS cu ajutoarul JavaScript</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quaerat repellendus aspernatur? Doloribus,
+        numquam corporis quas ab mollitia pariatur, eaque dolor, ducimus rem nesciunt iusto provident? Error libero odio
+        dolore.</p>
+    <p>Impedit voluptatem blanditiis minima recusandae, deleniti vel quae pariatur quibusdam culpa atque quisquam quasi
+        nobis consectetur amet doloribus ea dolorum earum quos? Corporis nisi cum corrupti ex voluptas explicabo
+        aspernatur.</p>
+    <button id="btn">Schimba CSS</button>
+    <div class="row">
+        <div id="div-left" class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat a earum sed nesciunt, adipisci natus
+                saepe
+                quasi qui rem, molestias fuga hic porro, at molestiae! Illo quaerat optio quisquam cum.</p>
+            <p>Magni, delectus animi iste mollitia quibusdam obcaecati illo reprehenderit nulla aut ex aspernatur, eius
+                distinctio blanditiis expedita dolorum aliquid deleniti! Eveniet accusamus adipisci ratione. Iusto, est
+                voluptates? Sunt, optio cumque?</p>
+            <p>Velit optio hic obcaecati harum illum impedit, quam doloribus rerum! Reprehenderit assumenda ex,
+                voluptate
+                molestiae facilis labore praesentium dolorem quam obcaecati aliquam itaque, quibusdam excepturi.
+                Voluptas
+                delectus laborum officia asperiores.</p>
+            <p>Aspernatur architecto alias velit! Quo omnis voluptas facere dolorem fuga eligendi deleniti magni velit
+                quas
+                quae dolore vero doloremque esse, praesentium officiis earum quidem, molestiae cumque, molestias cum rem
+                ipsum?</p>
+            <p>Eveniet, perspiciatis nihil quam maxime, illo magnam beatae, aliquid reiciendis natus dolore odit velit
+                quia?
+                Cumque, dolorem? Consectetur ullam fugiat tempora odit libero sint iure nostrum autem, a ad minus.</p>
+            <p>Molestias voluptatem aliquid velit explicabo obcaecati ad eveniet pariatur, earum, libero fuga fugit,
+                dolorem
+                nihil totam magni aperiam expedita vero voluptatibus quia tempore? Magnam, atque similique. Impedit
+                ducimus
+                necessitatibus praesentium.</p>
+            <p>Libero exercitationem est, dolorum facilis deleniti tempora! Harum laborum ipsam adipisci cumque
+                laudantium,
+                temporibus debitis. Incidunt repellendus provident blanditiis veniam error inventore dignissimos
+                sapiente
+                reprehenderit? Ducimus quas placeat asperiores impedit?</p>
+            <p>Quo expedita error quod cumque quam explicabo dolore magnam nam debitis optio. Exercitationem, nisi ex
+                molestiae sapiente ratione expedita consectetur consequuntur praesentium officia a dicta repudiandae
+                delectus corrupti, voluptatum similique.</p>
+            <p>Tempore consequuntur, soluta laboriosam necessitatibus quos praesentium. Adipisci fugit laudantium vitae
+                rerum consequuntur itaque nisi ipsum neque distinctio ut, delectus, vel non porro aspernatur. Sit sequi
+                itaque exercitationem quisquam temporibus?</p>
+            <p>Nihil incidunt quod suscipit quia aspernatur culpa officiis necessitatibus ullam sed laborum voluptas
+                sequi
+                itaque quasi accusamus sit, perferendis laboriosam perspiciatis voluptatum vel, adipisci rerum
+                asperiores.
+                Voluptatum libero consectetur aliquid.</p>
+            <button id="btn-left">Schimba CSS</button>
+        </div>
+        <div id="div-right" class="box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A optio ipsum error sequi perferendis suscipit
+                non,
+                debitis cum repellendus nam inventore corporis atque itaque natus, quaerat praesentium laborum corrupti
+                iure.</p>
+            <p>Reiciendis ipsum aliquam, enim, ducimus esse maxime dolorum quia nobis, eos porro saepe ratione explicabo
+                voluptates quibusdam quas eum modi vero officia. Voluptates iste quae corrupti, expedita officiis
+                veritatis
+                assumenda?</p>
+            <p>Similique perspiciatis voluptatem ipsum. Quisquam sequi sit illum rem est enim inventore! Excepturi
+                libero
+                numquam debitis, tempora autem at quos similique, porro adipisci, in sunt aperiam neque illum accusamus
+                culpa?</p>
+            <p>Consequuntur consequatur voluptatibus fugit sapiente natus assumenda dolorum eius. Quo similique saepe
+                ipsam.
+                A id facere quibusdam excepturi distinctio pariatur in, deserunt recusandae nulla asperiores rerum
+                assumenda
+                at dolore illo.</p>
+            <p>Inventore, reprehenderit saepe perspiciatis maiores facere a, natus deleniti atque consectetur nobis ea
+                non
+                qui aperiam laudantium veniam repellendus possimus perferendis vitae rerum tenetur facilis! Nostrum
+                omnis
+                ducimus provident consequatur?</p>
+            <p>Incidunt veritatis excepturi quia veniam voluptates, fuga officia culpa dolor nulla aspernatur ea
+                expedita
+                qui iure autem, animi quasi, atque minima itaque in? Excepturi eligendi, corrupti odio labore ratione
+                hic?
+            </p>
+            <p>Consequuntur voluptas corporis labore. Voluptatum labore exercitationem aperiam ipsum? Odio totam nemo
+                veritatis fugiat iusto ipsa laboriosam culpa explicabo accusamus eligendi, est dolore non repudiandae
+                sapiente quo et sint omnis.</p>
+            <p>Atque illo ab repudiandae aliquid at! Labore aliquid quos aspernatur laborum animi ut laboriosam facilis,
+                assumenda doloribus optio dolores a consectetur. Exercitationem nisi similique nemo optio culpa
+                architecto
+                voluptate nobis!</p>
+            <p>Est doloribus fuga blanditiis quod provident animi distinctio neque quaerat quisquam eius deserunt,
+                soluta
+                nisi corporis eligendi molestiae adipisci vitae dolores? Beatae accusantium obcaecati quam! Sint dolores
+                similique eligendi ab!</p>
+            <p>Quis voluptatem rerum ducimus deserunt nihil laboriosam veniam aperiam culpa eligendi, est necessitatibus
+                ipsum at aspernatur sapiente quasi cumque id fugiat, animi placeat. Incidunt sapiente cupiditate
+                necessitatibus labore accusamus harum!</p>
+            <button id="btn-right">Schimba CSS</button>
+        </div>
+
+
+    </div>
+    <div>
+        <button id="btn4">Schimba CSS Adauga class</button>
+        <button id="btn5">Schimba CSS Sterge class</button>
+        <button id="btn6">Schimba CSS Toggle class</button>
+    </div>
+
+    <script>
+        // metoda 1  cu style 
+        let btn = document.getElementById("btn");
+        btn.style.color = 'red';
+        btn.style.fontSize = '16px';
+
+        btn.addEventListener("click", function () {
+            alert(1234);
+            let allParagraphs = document.getElementsByTagName('p');
+            allParagraphs[0].style.color = 'blue';
+
+        });
+
+        // metoda 2 cu cssText
+        let btnLeft = document.getElementById("btn-left");
+        btnLeft.addEventListener("click", function () {
+
+            let divLeft = document.getElementById("div-left");
+            divLeft.style.cssText = "border:1px solid red; font-size: 16px; color:#e3e3e3"
+
+        });
+
+        // metoda 3 cu setAttribute()
+        let btnRight = document.getElementById("btn-right");
+        btnRight.addEventListener("click", function () {
+
+            let divRight = document.getElementById("div-right");
+            divRight.setAttribute('style', "border:1px solid green; font-size: 16px; color:#3e3e3e");
+
+        });
+
+        // metoda 4 cu classList
+        let btn4 = document.getElementById("btn4");
+        btn4.addEventListener("click", function () {
+            let divLeft = document.getElementById("div-left");
+            divLeft.classList.add('demo');
+        });
+
+        let btn5 = document.getElementById("btn5");
+        btn5.addEventListener("click", function () {
+            let divLeft = document.getElementById("div-left");
+            divLeft.classList.remove('demo');
+        });
+
+        let btn6 = document.getElementById("btn6");
+        btn6.addEventListener("click", function () {
+            let divLeft = document.getElementById("div-left");
+            divLeft.classList.toggle('demo');
+        });
+
+        // https://www.javascripttutorial.net/javascript-dom/javascript-style/
+    </script>
+</body>
+
+</html>

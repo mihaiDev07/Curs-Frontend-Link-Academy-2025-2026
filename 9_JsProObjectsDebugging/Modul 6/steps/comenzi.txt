@@ -1,0 +1,81 @@
+Shop OOP - comenzi actualizate pentru TypeScript
+
+Varianta rapida (daca folosesti scriptul):
+touch setup.sh
+chmod +x setup.sh
+./setup.sh
+
+sau
+
+I. Setup manual pentru varianta curenta TypeScript
+
+1. Instalam Node.js
+https://nodejs.org/en/download/
+
+2. Verificam instalarea
+node -v
+npm -v
+
+3. Initializam proiectul
+npm init -y
+
+4. Instalare pachete pentru build + TypeScript
+
+Dev dependencies:
+npm i -D webpack webpack-cli html-webpack-plugin
+npm i -D mini-css-extract-plugin copy-webpack-plugin
+npm i -D css-loader postcss-loader sass sass-loader style-loader
+npm i -D typescript ts-loader babel-loader
+npm i -D @types/bootstrap
+
+Dependencies:
+npm i bootstrap bootstrap-icons jquery @popperjs/core autoprefixer
+
+5. Structura de directoare
+mkdir -p dist src/assets/scss src/assets/images src/js/components src/js/contexts src/types
+
+6. Fisiere de baza (TypeScript)
+touch webpack.config.js 
+touch src/index.html
+touch src/index.ts src/about.ts
+touch src/assets/scss/styles.scss
+touch src/js/main.ts src/js/nav_sticky.ts
+touch src/js/components/Component.ts src/js/components/App.ts src/js/components/CartItem.ts
+touch src/js/components/CartList.ts src/js/components/Footer.ts src/js/components/Header.ts
+touch src/js/components/ProductItem.ts src/js/components/ProductList.ts src/js/components/About.ts
+touch src/js/contexts/CartContext.ts
+touch src/types/global.d.ts
+
+7. Configurari importante pentru TS
+
+- In webpack.config.js:
+  - rule pentru ts-loader pe fisiere .ts
+  - resolve.extensions sa contina ['.ts', '.js']
+  - entry points: src/index.ts si src/about.ts
+
+- In tsconfig.json:
+  - include: ["src/**/*.ts", "src/**/*.d.ts"]
+  - noEmit: true (emit-ul il face webpack)
+  - moduleResolution: "bundler"
+  - pentru TypeScript 5.x: ignoreDeprecations: "5.0"
+
+8. Scripturi in package.json
+"scripts": {
+  "dev": "webpack build --mode=development",
+  "build": "webpack build --mode=production",
+  "typecheck": "tsc --noEmit",
+  "test": "echo \"Error: no test specified\" && exit 1"
+}
+
+9. Daca folosim git
+touch .gitignore
+echo "node_modules/" >> .gitignore
+echo "dist/" >> .gitignore
+
+10. Comenzi de rulare
+npm install
+npm run typecheck
+npm run dev 
+npm run build
+
+

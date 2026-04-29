@@ -1,0 +1,153 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+
+/* CART  */
+
+.cart-div {
+  position: absolute;
+  top: 0;
+  display: none;
+  margin-left: 0;
+  background-color: #f2f2f2;
+  transition: 0.3s ease-in-out;
+}
+
+.cart-list {
+  width: 100vw;
+}
+
+.cart-open {
+  display: block;
+  right: 0;
+  top: 60px;
+  transition: 0.3s ease-in-out;
+  position: fixed;
+  z-index: 2;
+}
+
+.assign-column {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 10px 0 20px;
+}
+
+.assign-column span {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.align-cart h2 {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.cart-item span {
+  font-family: "Quicksand", serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 15px;
+}
+
+.img-text-cart {
+  text-align: center;
+}
+
+.img-text-cart h3 {
+  font-family: "Quicksand", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 10px;
+}
+
+.img-text-cart img {
+  width: 40px;
+}
+
+.btn-add-item {
+  border: none;
+  background-color: #f2f2f200;
+}
+
+.btn-remove-item {
+  border: none;
+  background-color: #f2f2f200;
+}
+
+.btn-add-item img {
+  width: 13px;
+}
+
+.btn-remove-item img {
+  width: 13px;
+}
+
+.add-qnt-num {
+  text-align: center;
+}
+
+.add-qnt-num span {
+  font-family: "Quicksand", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+}
+
+.remove-product {
+  border-radius: 7px;
+  border: solid black 2px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  background-color: #f2f2f200;
+}
+
+#cart-item-ul {
+  padding: 0;
+}
+
+.total-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 0 0px 0 25px;
+  border-top: solid 3px black;
+}
+
+.total-div h3 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}
+
+.total-div span {
+  text-align: center;
+  font-family: "Quicksand", serif;
+  font-weight: 500;
+}
+.flying-icon {
+  position: absolute;
+  z-index: 1000;
+  font-size: 24px;
+  color: #28a745; /* Verde pentru iconiță */
+  pointer-events: none; /* Previne interacțiunile cu elementul */
+  opacity: 1;
+  background: rgba(223, 0, 0, 0.8); /* Adaugă un fundal pentru vizibilitate */
+  border-radius: 50%; /* Rotunjim iconița */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out; /* Durata animației */
+}

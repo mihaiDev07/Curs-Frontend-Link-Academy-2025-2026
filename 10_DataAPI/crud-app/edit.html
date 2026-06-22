@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Editare utilizator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Utilizatori</a>
+        <a href="add.html">Adauga utilizator</a>
+    </nav>
+
+    <div class="container">
+
+        <h1>Editare utilizator</h1>
+
+        <form id="editForm">
+
+            <input type="text" id="firstName" required>
+
+            <input type="text" id="lastName" required>
+
+            <input type="email" id="email" required>
+
+            <input type="file" id="image" accept="image/*">
+
+            <img id="preview" width="150">
+
+            <button type="submit">Actualizeaza</button>
+
+        </form>
+
+    </div>
+
+    <script src="js/edit.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyShop - Produse</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html">MyShop</a>
+            <div class="links">
+                <span id="nav-user" class="muted">Vizitator</span>
+                <a href="cart.html" class="cart-link">Vezi cos <span id="nav-cart-count" class="cart-badge">0</span></a>
+                <a id="nav-admin" href="admin.html" style="display:none;">Admin</a>
+                <a id="nav-login" href="login.html">Login</a>
+                <button id="nav-logout" class="link-btn secondary" style="display:none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Lista produse</h1>
+        <div class="row" style="margin-bottom:16px;">
+            <input id="categoryFilter" type="text" placeholder="Filtrare categorie (ex: Electronice)"
+                style="padding:10px;border:1px solid #e5e7eb;border-radius:10px;" />
+            <button id="filterBtn" class="btn secondary">Filtreaza</button>
+            <button id="clearFilterBtn" class="btn secondary">Reset</button>
+        </div>
+        <div id="products" class="grid"></div>
+    </main>
+
+    <script src="../javascript/common.js"></script>
+    <script src="../javascript/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nume": "Popescu",
+        "prenume": "Ana",
+        "mail": "ana.popescu@myshop.ro",
+        "parola": "ana123"
+    },
+    {
+        "id": 2,
+        "nume": "Ionescu",
+        "prenume": "Mihai",
+        "mail": "mihai.ionescu@myshop.ro",
+        "parola": "mihai123"
+    }
+]

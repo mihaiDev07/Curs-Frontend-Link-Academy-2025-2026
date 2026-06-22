@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSet xmlns="http://www.bnr.ro/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bnr.ro/xsd nbrfxrates.xsd">
+    <Header>
+        <Publisher>National Bank of Romania</Publisher>
+        <PublishingDate>2026-05-06</PublishingDate>
+        <MessageType>DR</MessageType>
+    </Header>
+    <Body>
+        <Subject>Reference rates</Subject>
+        <OrigCurrency>RON</OrigCurrency>
+        <Cube date="2026-05-06">
+            <Rate currency="AED">1.2183</Rate>
+            <Rate currency="AUD">3.2483</Rate>
+            <Rate currency="BRL">0.9108</Rate>
+            <Rate currency="CAD">3.2920</Rate>
+            <Rate currency="CHF">5.7429</Rate>
+            <Rate currency="CNY">0.6569</Rate>
+            <Rate currency="CZK">0.2165</Rate>
+            <Rate currency="DKK">0.7051</Rate>
+            <Rate currency="EGP">0.0848</Rate>
+            <Rate currency="EUR">5.2688</Rate>
+            <Rate currency="GBP">6.0960</Rate>
+            <Rate currency="HKD">0.5711</Rate>
+            <Rate currency="HUF" multiplier="100">1.4665</Rate>
+            <Rate currency="IDR" multiplier="100">0.0258</Rate>
+            <Rate currency="ILS">1.5395</Rate>
+            <Rate currency="INR">0.0473</Rate>
+            <Rate currency="ISK" multiplier="100">3.6691</Rate>
+            <Rate currency="JPY" multiplier="100">2.8685</Rate>
+            <Rate currency="KRW" multiplier="100">0.3091</Rate>
+            <Rate currency="MDL">0.2612</Rate>
+            <Rate currency="MXN">0.2596</Rate>
+            <Rate currency="MYR">1.1400</Rate>
+            <Rate currency="NOK">0.4828</Rate>
+            <Rate currency="NZD">2.6702</Rate>
+            <Rate currency="PHP">0.0736</Rate>
+            <Rate currency="PLN">1.2445</Rate>
+            <Rate currency="RSD">0.0449</Rate>
+            <Rate currency="RUB">0.0596</Rate>
+            <Rate currency="SEK">0.4865</Rate>
+            <Rate currency="SGD">3.5288</Rate>
+            <Rate currency="THB">0.1387</Rate>
+            <Rate currency="TRY">0.0989</Rate>
+            <Rate currency="UAH">0.1020</Rate>
+            <Rate currency="USD">4.4746</Rate>
+            <Rate currency="XAU">676.0740</Rate>
+            <Rate currency="XDR">6.1573</Rate>
+            <Rate currency="ZAR">0.2736</Rate>
+        </Cube>
+    </Body>
+</DataSet>

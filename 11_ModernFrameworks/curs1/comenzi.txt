@@ -1,0 +1,88 @@
+Aplicatia 1:
+node –v
+npm –v
+tsc -v
+ng version 
+git --version
+
+-update node
+npm cache clean -f
+sudo npm install -g n
+sudo n stable
+node -v
+npm -v
+
+npm install -g @angular/cli
+
+--update angular
+npm uninstall -g @angular/cli
+npm cache clean --force
+
+Instalare o anumita versiune:
+npm install -g @angular/cli@16.2.14
+sau
+npm install -g @angular/cli@latest
+
+ng version
+
+sau 
+sudo npm uninstall -g angular-cli
+sudo npm uninstall --save-dev angular-cli
+sudo npm cache verify
+sudo npm cache clean
+sudo npm install -g @angular/cli@latest
+ng update @angular/core @angular/cli
+
+ng serve
+in caz de eroare 
+Could not find the '@angular-devkit/build-angular:dev-server'
+npm install --save-dev @angular-devkit/build-angular
+
+
+
+
+Aplicatia 2:
+ng new angular-demo
+sau ng init  dar facem noi folderul angular-demo 
+sau ng new angular-demo --routing
+sau npx @angular/cli new my-app
+pornim aplicatie
+cd angular-demo
+ng serve 
+sau ng serve --open  
+sau npm start   // comanda din sectiunea scripts in fisierul package.json.
+http://localhost:4200/
+
+ng build --aot
+apoi folosim aplicatia din folderul 
+/dist/angular-demo/
+
+
+// componente 
+
+Aplicatia 3:
+ng g component home
+// sau ng g c test --flat  // --flat nu mai face folder
+ 
+ng g c articol --standalone --inline-style --inline-template  
+ng g c articol --standalone --s --t  
+
+
+cars = ['Tesla', 'Toyota', 'BMW', 'Honda', 'Ford', 'Hyundai', 'Nissan', 'Porsche'];
+<select>
+  <option *ngFor="let i of cars">{{i}}</option>
+</select>
+
+// interfete
+ng generate interface models/user
+ng g interface models/product
+ng g interface shared/user
+Adaugarea selectorului: <app-home></app-home> in app.component.html
+//servicii
+
+ng g s alerta
+apoi declarat in app.module.ts
+providers: [
+    AlertaService
+  ],
+

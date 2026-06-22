@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "nume": "Laptop Ultrabook 14",
+        "descriere": "Laptop subtire cu procesor i5, 16GB RAM si SSD 512GB.",
+        "pret": 3499,
+        "poza": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Electronice"
+    },
+    {
+        "id": 2,
+        "nume": "Telefon Smart X",
+        "descriere": "Telefon cu ecran OLED 6.5 inch, camera 50MP si baterie 5000mAh.",
+        "pret": 2399,
+        "poza": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Electronice"
+    },
+    {
+        "id": 3,
+        "nume": "Casti Wireless Pro",
+        "descriere": "Casti over-ear cu anulare activa a zgomotului.",
+        "pret": 799,
+        "poza": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Audio"
+    },
+    {
+        "id": 4,
+        "nume": "Mouse Ergonomic",
+        "descriere": "Mouse wireless cu design ergonomic pentru lucru zilnic.",
+        "pret": 149,
+        "poza": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Periferice"
+    },
+    {
+        "id": 5,
+        "nume": "Tastatura Mecanica",
+        "descriere": "Tastatura mecanica iluminata RGB, switch-uri tactile.",
+        "pret": 359,
+        "poza": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Periferice"
+    },
+    {
+        "id": 6,
+        "nume": "Monitor 27 inch",
+        "descriere": "Monitor IPS 27 inch, rezolutie QHD, 75Hz.",
+        "pret": 1299,
+        "poza": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Electronice"
+    },
+    {
+        "id": 7,
+        "nume": "Rucsac Urban",
+        "descriere": "Rucsac rezistent la apa, compartiment laptop 15.6 inch.",
+        "pret": 219,
+        "poza": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Fashion"
+    },
+    {
+        "id": 8,
+        "nume": "Tricou Basic",
+        "descriere": "Tricou din bumbac 100%, croiala regular fit.",
+        "pret": 69,
+        "poza": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Fashion"
+    },
+    {
+        "id": 9,
+        "nume": "Sneakers Street",
+        "descriere": "Pantofi casual comozi pentru utilizare zilnica.",
+        "pret": 289,
+        "poza": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Fashion"
+    },
+    {
+        "id": 10,
+        "nume": "Ceas Sport",
+        "descriere": "Ceas digital rezistent la apa cu cronometru.",
+        "pret": 199,
+        "poza": "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Accesorii"
+    },
+    {
+        "id": 11,
+        "nume": "Tableta Air 11",
+        "descriere": "Tableta usoara cu ecran 11 inch, 128GB stocare si Wi-Fi 6.",
+        "pret": 1899,
+        "poza": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Electronice"
+    },
+    {
+        "id": 12,
+        "nume": "Boxa Portabila Mini",
+        "descriere": "Boxa Bluetooth compacta, autonomie 12 ore si rezistenta la stropi.",
+        "pret": 259,
+        "poza": "https://images.unsplash.com/photo-1589003077984-894e133dabab?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Audio"
+    },
+    {
+        "id": 13,
+        "nume": "Hanorac Casual",
+        "descriere": "Hanorac din bumbac, interior moale si buzunar frontal.",
+        "pret": 149,
+        "poza": "https://images.unsplash.com/photo-1618354691321-e851c56960d1?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Fashion"
+    },
+    {
+        "id": 14,
+        "nume": "Geanta Laptop Office",
+        "descriere": "Geanta business pentru laptop 15.6 inch, cu compartimente multiple.",
+        "pret": 179,
+        "poza": "https://images.unsplash.com/photo-1594633313593-bab3825d0caf?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Accesorii"
+    },
+    {
+        "id": 15,
+        "nume": "Webcam Full HD",
+        "descriere": "Webcam 1080p cu microfon incorporat, ideal pentru sedinte online.",
+        "pret": 229,
+        "poza": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Periferice"
+    },
+    {
+        "id": 16,
+        "nume": "Lampa Birou LED",
+        "descriere": "Lampa reglabila cu lumina rece/calda si alimentare USB.",
+        "pret": 119,
+        "poza": "https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?auto=format&fit=crop&w=900&q=80",
+        "categorie": "Casa"
+    }
+]

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curs 3 - Hello Vue</title>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      {{ message }} {{ nume }}
+      {{ 4+5}}
+      {{salut ? salut : 'Buna ziua!'}}
+      {{salut || 'Buna ziua!'}}
+      <ul>
+        <li v-for="car in cars">{{ car }}</li>
+      </ul>
+
+      <p>{{ count }}</p>
+      <button @click="increment()">Apasa1 +</button>
+      <button @click="increment">Apasa2 +</button>
+      <button @click="count++">Apasa3 +</button>
+    </div>
+  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref } = Vue;
+
+    createApp({
+      setup() {
+        const message = ref('Hello Vue!');
+        const nume = ref('Adrian');
+        const salut = ref('Bine ati venit!');
+        const count = ref(0);
+
+        const cars = ref([
+          'Tesla',
+          'Toyota',
+          'BMW',
+          'Honda',
+          'Ford',
+          'Hyundai',
+          'Nissan',
+          'Porsche'
+        ]);
+
+        const increment = () => {
+          count.value++;
+        };
+
+        return {
+          message,
+          nume,
+          salut,
+          count,
+          cars,
+          increment
+        };
+      }
+    }).mount('#app');
+
+
+
+    // Aplicația Vue este un obiect care controlează elementul cu id-ul #app
+    // Toate elementele controlat de Aplicația Vue sunt reactive, adica:
+    // Data Binding (este legat de proprietatea message a aplicației și se
+    // schimbă când se schimbă acea proprietate)
+
+    // concret deschidem consola si tastam: app.message='Buna ziua!' Apasam Enter
+  </script>
+</body>
+
+</html>

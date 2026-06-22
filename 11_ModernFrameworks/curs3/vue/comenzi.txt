@@ -1,0 +1,18 @@
+
+1.
+npm create vue@latest vue-demo
+sau 
+npm create vite@latest vue-demo
+sau
+npm create vite@latest vue-demo -- --template vue
+
+2. Alegem vue + typescript
+
+3. cd vue-demo
+
+4.  npm install
+
+//Comunicare între componente fără relație directă
+5. npm install pinia
+
+6. npm run dev

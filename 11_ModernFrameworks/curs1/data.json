@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "name": "Speaker",
+        "description": "Description for Speaker",
+        "price": "167.99",
+        "image": "https://picsum.photos/seed/1/400/400",
+        "categories": [
+            "Category5",
+            "Category6"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Tablet",
+        "description": "Description for Tablet",
+        "price": "181.99",
+        "image": "https://picsum.photos/seed/2/400/400",
+        "categories": [
+            "Category5",
+            "Category10"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Speaker",
+        "description": "Description for Speaker",
+        "price": "372.99",
+        "image": "https://picsum.photos/seed/3/400/400",
+        "categories": [
+            "Category4",
+            "Category9"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Smartwatch",
+        "description": "Description for Smartwatch",
+        "price": "295.99",
+        "image": "https://picsum.photos/seed/4/400/400",
+        "categories": [
+            "Category1",
+            "Category7"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Speaker",
+        "description": "Description for Speaker",
+        "price": "409.99",
+        "image": "https://picsum.photos/seed/5/400/400",
+        "categories": [
+            "Category5",
+            "Category6"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Keyboard",
+        "description": "Description for Keyboard",
+        "price": "277.99",
+        "image": "https://picsum.photos/seed/6/400/400",
+        "categories": [
+            "Category2",
+            "Category10"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Speaker",
+        "description": "Description for Speaker",
+        "price": "441.99",
+        "image": "https://picsum.photos/seed/7/400/400",
+        "categories": [
+            "Category5",
+            "Category6"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Keyboard",
+        "description": "Description for Keyboard",
+        "price": "193.99",
+        "image": "https://picsum.photos/seed/8/400/400",
+        "categories": [
+            "Category4",
+            "Category10"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Camera",
+        "description": "Description for Camera",
+        "price": "124.99",
+        "image": "https://picsum.photos/seed/9/400/400",
+        "categories": [
+            "Category5",
+            "Category7"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Smartwatch",
+        "description": "Description for Smartwatch",
+        "price": "494.99",
+        "image": "https://picsum.photos/seed/10/400/400",
+        "categories": [
+            "Category1",
+            "Category10"
+        ]
+    }
+]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myClass {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1 v-bind:class="{ myClass: false }">Prenume : {{fname}}</h1>
+        <h1>Nume : {{lname}}</h1>
+        <p v-bind:title="message">{{myName()}}</p>
+        <p :title="message">{{myName()}}</p>
+    </div>
+
+    <div id="app2">
+        <span v-if="seen">Un mesaj ce poate fi ascuns</span>
+        <ol>
+            <li v-for="limbaj in limbaje" :key="limbaj.id">
+                {{ limbaj.text }}
+            </li>
+        </ol>
+        <ol>
+            <li v-for="{id,text} in limbaje" :key="id">
+                {{ text }}
+            </li>
+        </ol>
+        <ol>
+            <li v-for="(limbaj, index) in limbaje" :key="limbaj.id">
+                {{index}} {{ limbaj.text }}
+            </li>
+        </ol>
+        <div v-html="htmlcontent"></div>
+    </div>
+
+    <!-- <p>Daca mergem in consola si scriem
+        app.limbaje.push({id:4,text:'Vue'})
+        si apasam enter 
+        vedem ca si v-for esre reacriv
+    </p> -->
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="ex2.js"></script>
+
+</body>
+
+</html>

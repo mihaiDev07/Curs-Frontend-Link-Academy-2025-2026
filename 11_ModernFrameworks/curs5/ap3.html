@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Add React in One Minute</title>
+</head>
+
+<body>
+
+    <h2>Add React in One Minute</h2>
+
+    <!-- We will put our React component inside this div. -->
+    <div id="like_button_container"></div>
+
+    <!-- Load React 19 from CDN (ESM modules). -->
+    <script type="module">
+        import React from 'https://esm.sh/react@19';
+        import { createRoot } from 'https://esm.sh/react-dom@19/client';
+
+        const e = React.createElement;
+
+        class LikeButton extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = { liked: false };
+            }
+
+            render() {
+                if (this.state.liked) {
+                    return e('h1', null, 'You liked this.');
+                }
+
+                return e(
+                    'button',
+                    { onClick: () => this.setState({ liked: true }) },
+                    'Like'
+                );
+            }
+        }
+
+        const domContainer = document.querySelector('#like_button_container');
+        const root = createRoot(domContainer);
+        root.render(e(LikeButton));
+
+        // Optional: expose React in console for quick demos.
+        window.React = React;
+        window.root = root;
+    </script>
+
+</body>
+
+</html>

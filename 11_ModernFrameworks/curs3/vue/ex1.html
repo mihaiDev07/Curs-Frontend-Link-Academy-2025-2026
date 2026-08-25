@@ -8,19 +8,23 @@
 </head>
 
 <body>
+
+  {{ 5 + 9}}
+  {{ message }} {{ nume }}
   <div id="app">
     <div>
       {{ message }} {{ nume }}
-      {{ 4+5}}
+      {{ 4 + 5}}
       {{salut ? salut : 'Buna ziua!'}}
-      {{salut || 'Buna ziua!'}}
-      <ul>
+      {{salut || 'Buna ziua22!'}}
+      <ol type="i">
         <li v-for="car in cars">{{ car }}</li>
-      </ul>
+      </ol>
 
       <p>{{ count }}</p>
-      <button @click="increment">Apasa1 +</button>
-      <button @click="increment()">Apasa2 +</button>
+      <button @click="increment(1)">Apasa1 +</button>
+      <button @click="increment(-1)">Apasa2 +</button>
+      <button @click="decrementare">Apasa3 -</button>
     </div>
   </div>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -32,7 +36,7 @@
         return {
           message: 'Hello Vue!',
           nume: 'Adrian',
-          salut: 'Bine ati venit!',
+          //salut: 'Bine ati venit!',
           count: 0,
           cars: [
             'Tesla',
@@ -48,8 +52,11 @@
       },
 
       methods: {
-        increment() {
-          this.count++;
+        increment(amount = 1) {
+          this.count += amount;
+        },
+        decrementare() {
+          this.count--;
         }
       }
     }).mount('#app');

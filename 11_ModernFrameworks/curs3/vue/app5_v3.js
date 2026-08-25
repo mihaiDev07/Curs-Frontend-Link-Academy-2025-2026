@@ -46,7 +46,7 @@ let vm = createApp({
                 }
                 this.guests.push(guest)
 
-                this.name = ''
+                this.name = 'Demo'
                 this.confirmed = false
                 this.tableNumber = ''
                 this.message = ''

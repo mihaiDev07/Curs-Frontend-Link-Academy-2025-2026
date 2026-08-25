@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Add React in One Minute</title>
+</head>
+
+<body>
+
+    <!-- We will put our React component inside this div. -->
+    <div id="root"></div>
+    <div id="root2"></div>
+    <!-- Load React 19 with ESM modules (React 19 no longer provides the same UMD files as React 18). -->
+    <script type="module">
+        import React from 'https://esm.sh/react@19';
+        import { createRoot } from 'https://esm.sh/react-dom@19/client';
+
+        const root = createRoot(document.getElementById('root'));
+        const name = 'LinkAcademy cu JSX';
+        const element = React.createElement('h1', { className: 'linkAcademy' }, `Hello ${name}`);
+        root.render(element);
+
+        const root2 = createRoot(document.getElementById('root2'));
+        const element2 = React.createElement('h1', { className: 'linkAcademy' }, 'Hello React!');
+        root2.render(element2);
+
+        // Expose references for quick console demos.
+        window.React = React;
+        window.root = root;
+        window.root2 = root2;
+    </script>
+    <style scoped>
+        .linkAcademy {
+            color: red;
+        }
+    </style>
+</body>
+
+</html>

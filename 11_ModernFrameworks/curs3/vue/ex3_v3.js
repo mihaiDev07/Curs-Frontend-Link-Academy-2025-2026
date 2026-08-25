@@ -20,9 +20,13 @@ let vm = createApp({
         },
         changebgcolor: function () {
             this.styleobj.backgroundColor = "green";
+            this.styleobj.width = "200px";
+            this.styleobj.height = "200px";
         },
         originalcolor: function () {
             this.styleobj.backgroundColor = "red";
+            this.styleobj.width = "100px";
+            this.styleobj.height = "100px";
         }
     },
 }).mount('#databinding');

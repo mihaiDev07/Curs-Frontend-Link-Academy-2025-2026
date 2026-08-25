@@ -6,7 +6,7 @@ let vm = createApp({
             lname: "Popescu",
             address: "Brasov",
             message: "Imi place JavaScript",
-           
+
         }
     },
     methods: {

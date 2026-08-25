@@ -11,7 +11,7 @@
     <div id="app">
         <h1>Prenume : {{fname}}</h1>
         <h1>Nume : {{lname}}</h1>
-        <p v-bind:title="message">{{myName()}}</p>
+        <p :title="message">{{myName()}}</p>
     </div>
 
     <div id="app2">
@@ -21,12 +21,12 @@
                 {{ limbaj.text }}
             </li>
         </ol>
-        <div v-html = "htmlcontent"></div>
+        <div v-html="htmlcontent"></div>
     </div>
 
     <script src="https://unpkg.com/vue@3"></script>
     <script src="ex2_v3.js"></script>
-    
+
 </body>
 
 </html>

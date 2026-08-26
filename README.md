@@ -1,8 +1,8 @@
 # 🎓 Frontend Development Course — Link Academy 2025–2026
 
-This repository contains the exercises, examples, and practical projects completed during the **Frontend Development program at Link Academy**.
+This repository contains the exercises, assignments, and practical projects completed during the **Frontend Development program at Link Academy**.
 
-The coursework follows my progress from the foundations of web development—HTML and CSS—to responsive design, JavaScript, working with APIs, Git, debugging, and modern frontend frameworks.
+It documents my progress from HTML, CSS, and responsive design to JavaScript, APIs, modern frameworks, full-stack development, and the delivery of a complete final project.
 
 ---
 
@@ -10,49 +10,49 @@ The coursework follows my progress from the foundations of web development—HTM
 
 | Module | Topic | Main concepts |
 | --- | --- | --- |
-| `1_introducere` | Introduction to web development | Development environment and the structure of a web project |
+| `1_introducere` | Introduction to web development | Development environment and web project structure |
 | `2_bazeleHTML` | HTML fundamentals | Semantic elements, page structure, links, images, and content |
 | `3_FormHTML` | HTML forms | Inputs, labels, validation, and form structure |
-| `4_bazeleCSS` | CSS fundamentals | Selectors, colors, typography, spacing, and the box model |
+| `4_bazeleCSS` | CSS fundamentals | Selectors, typography, spacing, and the box model |
 | `5_bazeleDesign` | Web design fundamentals | Layout, visual hierarchy, colors, and reusable styling |
 | `6_ResponsiveDesign` | Responsive design | Flexible layouts, media queries, and mobile-friendly interfaces |
-| `7_javascriptFundamentals` | JavaScript fundamentals | Variables, functions, conditions, loops, arrays, and DOM manipulation |
-| `8_gitControl` | Version control with Git | Repositories, commits, branches, and project history |
-| `9_JsProObjectsDebugging` | Advanced JavaScript and debugging | Objects, code organization, debugging, and error analysis |
+| `7_javascriptFundamentals` | JavaScript fundamentals | Variables, functions, arrays, events, and DOM manipulation |
+| `8_gitControl` | Git version control | Repositories, commits, branches, and project history |
+| `9_JsProObjectsDebugging` | JavaScript and debugging | Objects, code organization, debugging, and error analysis |
 | `10_DataAPI` | Data and APIs | Fetching, processing, and displaying external data |
-| `11_ModernFrameworks` | Modern frontend frameworks | Component-based development and modern application structure |
+| `11_ModernFrameworks` | Modern frameworks | Component-based development and application structure |
+| `12_DataAPI` | Advanced API exercises | Asynchronous requests, integration, and data-driven interfaces |
+| `13_FullStackProject` | Collaborative full-stack project | React frontend, Express API, authentication, products, and orders |
+| `14_FinalProject` | Final project — Vellora Shop | Full-stack e-commerce development, deployment, and documentation |
 
 ---
 
 ## 🛠️ Technologies and Tools
 
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **Responsive Web Design**
-- **REST APIs**
-- **Git** and **GitHub**
-- **Modern frontend frameworks**
-- **Visual Studio Code**
-- Browser developer tools
+- HTML5 and CSS3
+- JavaScript and TypeScript
+- Responsive Web Design
+- React and modern component-based development
+- REST APIs
+- Node.js and Express
+- Git and GitHub
+- Visual Studio Code and browser developer tools
+- Vercel and Render
 
 ---
 
-## 🎯 Learning Objectives
+## 🎯 Learning Outcomes
 
-The main objectives of this repository are to document and demonstrate my ability to:
+This repository demonstrates my ability to:
 
-- Create semantic and accessible web pages
-- Build and validate HTML forms
-- Style interfaces with modern CSS
-- Create responsive layouts for mobile, tablet, and desktop
-- Use JavaScript to add interactivity to web pages
-- Manipulate the DOM and handle browser events
-- Work with objects and structured data
-- Consume external APIs
+- Create semantic, accessible, and responsive web interfaces
+- Build interactive applications with JavaScript and React
+- Consume external APIs and work with structured data
 - Debug frontend applications
-- Track project changes with Git and GitHub
-- Understand component-based frontend development
+- Use Git and GitHub for version control
+- Connect a frontend application to a backend API
+- Implement authentication and role-based access
+- Build, document, and deploy a complete full-stack project
 
 ---
 
@@ -71,7 +71,9 @@ Curs-Frontend-Link-Academy-2025-2026/
 ├── 9_JsProObjectsDebugging/
 ├── 10_DataAPI/
 ├── 11_ModernFrameworks/
-├── .gitignore
+├── 12_DataAPI/
+├── 13_FullStackProject/
+├── 14_FinalProject/
 └── README.md
 ```
 
@@ -85,50 +87,32 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/mihaiDev07/Curs-Frontend-Link-Academy-2025-2026.git
-```
-
-Navigate to the repository:
-
-```bash
 cd Curs-Frontend-Link-Academy-2025-2026
 ```
 
-Most HTML, CSS, and JavaScript exercises can be opened directly in a browser or run with a local development extension such as **Live Server**.
-
-For exercises that contain a `package.json` file, install their dependencies and use the script defined inside that project:
-
-```bash
-npm install
-npm run dev
-```
+HTML, CSS, and JavaScript exercises can usually be opened directly in a browser or with **Live Server**. For projects containing a `package.json` file, follow the instructions in that project's folder.
 
 ---
 
-## 💡 What This Repository Demonstrates
+## 🏆 Final Project
 
-This repository documents my learning process throughout the course. It complements my finished portfolio projects by showing the exercises and concepts that helped me strengthen my frontend development foundations.
+The course concludes with **Vellora Shop**, a complete full-stack e-commerce application built with React, TypeScript, Node.js, Express, and SQLite.
 
-My larger completed projects are available on my [GitHub profile](https://github.com/mihaiDev07), and my portfolio can be viewed at [mihai-vadana-portfolio.vercel.app](https://mihai-vadana-portfolio.vercel.app).
-
----
-
-## 📌 Project Status
-
-The repository is maintained as an educational archive of the **Link Academy 2025–2026 Frontend Development course**. Exercises are organized by module and updated as the program progresses.
+- [View the live application](https://vellorashop.vercel.app)
+- [View the complete Vellora Shop repository](https://github.com/mihaiDev07/Vellora-Shop)
+- [Read the final-project summary](./14_FinalProject/README.md)
 
 ---
 
 ## 👨‍💻 Author
 
-**Mihai Vădana**
+**Mihai Vădana** — Full-Stack Web Developer
 
-Full-Stack Web Developer focused on building modern, responsive, and user-friendly web applications.
-
-- GitHub: [https://github.com/mihaiDev07](https://github.com/mihaiDev07)
-- Portfolio: [https://mihai-vadana-portfolio.vercel.app](https://mihai-vadana-portfolio.vercel.app)
+- [GitHub Profile](https://github.com/mihaiDev07)
+- [Developer Portfolio](https://mihai-vadana-portfolio.vercel.app)
 
 ---
 
 ## 📄 Note
 
-This repository is intended for educational and portfolio purposes. It contains coursework and practical exercises completed during the program.
+This repository is maintained as an educational and portfolio archive of the **Link Academy 2025–2026 Frontend Development course**.

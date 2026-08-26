@@ -1,0 +1,9 @@
+{
+  "name": "fashion-catalog-frontend-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static production build of the Fashion Catalog frontend",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

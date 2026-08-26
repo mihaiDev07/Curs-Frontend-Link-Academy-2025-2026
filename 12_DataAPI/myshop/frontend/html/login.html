@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyShop - Login</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html">MyShop</a>
+            <div class="links">
+                <span id="nav-user" class="muted">Vizitator</span>
+                <a href="cart.html" class="cart-link">Vezi cos <span id="nav-cart-count" class="cart-badge">0</span></a>
+                <a id="nav-admin" href="admin.html" style="display:none;">Admin</a>
+                <a id="nav-login" href="login.html">Login</a>
+                <button id="nav-logout" class="link-btn secondary" style="display:none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Autentificare</h1>
+        <div id="loginFlash" class="flash"></div>
+        <form id="loginForm" class="form">
+            <label for="mail">Email</label>
+            <input id="mail" type="email" required />
+
+            <label for="parola">Parola</label>
+            <input id="parola" type="password" required />
+
+            <div class="row" style="margin-top:12px;">
+                <button type="submit" class="btn">Login</button>
+            </div>
+        </form>
+        <p class="muted" style="margin-top:12px;">Exemplu utilizator: ana.popescu@myshop.ro / ana123</p>
+    </main>
+
+    <script src="../javascript/common.js"></script>
+    <script src="../javascript/login.js"></script>
+</body>
+
+</html>

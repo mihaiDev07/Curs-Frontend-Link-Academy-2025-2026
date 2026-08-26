@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>💬 WebSocket Chat Application</h1>
+            <p class="subtitle">Real-time messaging without login</p>
+        </header>
+
+        <div class="chat-container">
+            <!-- Messages Display Area -->
+            <div class="messages-area">
+                <div id="messages" class="messages-list">
+                    <div class="placeholder">Waiting for messages...</div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Enter your name..." maxlength="20"
+                        class="input-field">
+                    <input type="text" id="message" placeholder="Type a message..." class="input-field">
+                    <button id="sendBtn" class="send-btn">Send Message</button>
+                </div>
+                <div class="status" id="status">Ready</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <h2>Edit Message</h2>
+            <textarea id="editText" class="edit-textarea"></textarea>
+            <div class="modal-buttons">
+                <button id="editConfirmBtn" class="btn-confirm">Save Changes</button>
+                <button id="editCancelBtn" class="btn-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

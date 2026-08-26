@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Curs Valutar BNR</title>
+	<style>
+		:root {
+			--bg: #f6f3ed;
+			--paper: #fffdf9;
+			--ink: #1e1a16;
+			--muted: #6f665f;
+			--line: #ded5cb;
+			--accent: #bd4f26;
+			--accent-soft: #f9d6c7;
+			--shadow: 0 12px 34px rgba(43, 31, 21, 0.11);
+			--radius: 18px;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			min-height: 100vh;
+			background:
+				radial-gradient(circle at 10% -20%, #f9e2c7 0 35%, transparent 36%),
+				radial-gradient(circle at 100% 0, #d8edf7 0 24%, transparent 25%),
+				var(--bg);
+			color: var(--ink);
+			font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+			padding: 24px;
+		}
+
+		.app {
+			max-width: 980px;
+			margin: 0 auto;
+		}
+
+		.hero {
+			display: flex;
+			justify-content: space-between;
+			align-items: end;
+			gap: 16px;
+			margin-bottom: 20px;
+		}
+
+		h1 {
+			margin: 0;
+			font-family: "Bricolage Grotesque", "Segoe UI", sans-serif;
+			font-size: clamp(1.8rem, 3vw, 2.8rem);
+			line-height: 1.05;
+			letter-spacing: -0.03em;
+		}
+
+		.subtitle {
+			margin: 8px 0 0;
+			color: var(--muted);
+		}
+
+		.controls {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		button {
+			border: 1px solid color-mix(in srgb, var(--accent) 40%, white 60%);
+			background: linear-gradient(180deg, #d86135, var(--accent));
+			color: white;
+			font-weight: 600;
+			border-radius: 999px;
+			padding: 10px 16px;
+			cursor: pointer;
+			transition: transform 120ms ease, box-shadow 120ms ease;
+			box-shadow: 0 6px 14px rgba(189, 79, 38, 0.2);
+		}
+
+		button:hover {
+			transform: translateY(-1px);
+			box-shadow: 0 8px 16px rgba(189, 79, 38, 0.24);
+		}
+
+		button:active {
+			transform: translateY(0);
+		}
+
+		.panel {
+			background: var(--paper);
+			border: 1px solid var(--line);
+			border-radius: var(--radius);
+			padding: 18px;
+			box-shadow: var(--shadow);
+		}
+
+		.meta {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 12px;
+			margin-bottom: 18px;
+		}
+
+		.meta-card {
+			border: 1px solid var(--line);
+			border-radius: 14px;
+			padding: 10px 12px;
+			background: #fff;
+		}
+
+		.meta-label {
+			display: block;
+			font-size: 0.78rem;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+			color: var(--muted);
+			margin-bottom: 3px;
+		}
+
+		.meta-value {
+			font-size: 1rem;
+			font-weight: 650;
+		}
+
+		.status {
+			margin: 0 0 12px;
+			color: var(--muted);
+		}
+
+		.rates {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+			gap: 10px;
+		}
+
+		.rate {
+			background: #fff;
+			border: 1px solid var(--line);
+			border-radius: 14px;
+			padding: 12px;
+		}
+
+		.rate.focus {
+			border-color: color-mix(in srgb, var(--accent) 50%, var(--line) 50%);
+			background: linear-gradient(180deg, #fff9f5, #fff);
+		}
+
+		.currency {
+			margin: 0;
+			font-size: 0.82rem;
+			color: var(--muted);
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+		}
+
+		.value {
+			margin: 6px 0 0;
+			font-size: 1.25rem;
+			font-weight: 700;
+			letter-spacing: -0.01em;
+		}
+
+		.error {
+			color: #9a2f14;
+			background: var(--accent-soft);
+			border: 1px solid #efb39a;
+			border-radius: 10px;
+			padding: 10px 12px;
+		}
+
+		@media (max-width: 760px) {
+			body {
+				padding: 14px;
+			}
+
+			.hero {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			.meta {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<main class="app">
+		<header class="hero">
+			<div>
+				<h1>Curs valutar BNR</h1>
+				<p class="subtitle">Date XML preluate prin proxy Node.js local</p>
+			</div>
+			<div class="controls">
+				<button id="refreshBtn" type="button">Reincarca</button>
+			</div>
+		</header>
+
+		<section class="panel">
+			<div class="meta">
+				<article class="meta-card">
+					<span class="meta-label">Data curs</span>
+					<strong id="bnrDate" class="meta-value">-</strong>
+				</article>
+				<article class="meta-card">
+					<span class="meta-label">Monede</span>
+					<strong id="ratesCount" class="meta-value">-</strong>
+				</article>
+				<article class="meta-card">
+					<span class="meta-label">Sursa</span>
+					<strong class="meta-value">BNR / XML</strong>
+				</article>
+			</div>
+
+			<p id="status" class="status">Astept datele...</p>
+			<div id="error" class="error" hidden></div>
+			<div id="rates" class="rates"></div>
+		</section>
+	</main>
+
+	<script>
+		const API_URL = "http://localhost:3000/api/bnr";
+		const highlighted = new Set(["EUR", "USD", "GBP"]);
+
+		const statusEl = document.getElementById("status");
+		const errorEl = document.getElementById("error");
+		const ratesEl = document.getElementById("rates");
+		const bnrDateEl = document.getElementById("bnrDate");
+		const ratesCountEl = document.getElementById("ratesCount");
+		const refreshBtn = document.getElementById("refreshBtn");
+
+		function parseRates(xmlDoc) {
+			const cube = xmlDoc.querySelector("Cube[date]");
+			const date = cube ? cube.getAttribute("date") : "necunoscuta";
+			const rates = [...xmlDoc.querySelectorAll("Rate")].map((rateNode) => {
+				const currency = rateNode.getAttribute("currency") || "N/A";
+				const multiplier = Number(rateNode.getAttribute("multiplier") || 1);
+				const value = Number((rateNode.textContent || "0").trim());
+				return { currency, multiplier, value };
+			});
+			return { date, rates };
+		}
+
+		function renderRates(rates) {
+			const sorted = rates
+				.filter((r) => Number.isFinite(r.value))
+				.sort((a, b) => a.currency.localeCompare(b.currency));
+
+			ratesEl.innerHTML = sorted.map((rate) => {
+				const classes = ["rate", highlighted.has(rate.currency) ? "focus" : ""].filter(Boolean).join(" ");
+				const displayValue = rate.value.toLocaleString("ro-RO", {
+					minimumFractionDigits: 4,
+					maximumFractionDigits: 4
+				});
+				const label = rate.multiplier > 1 ? `${rate.multiplier} ${rate.currency}` : rate.currency;
+
+				return `
+					<article class="${classes}">
+						<p class="currency">${label}</p>
+						<p class="value">${displayValue} RON</p>
+					</article>
+				`;
+			}).join("");
+		}
+
+		async function loadRates() {
+			statusEl.textContent = "Se incarca datele de la proxy...";
+			errorEl.hidden = true;
+			ratesEl.innerHTML = "";
+
+			try {
+				const response = await fetch(API_URL, { cache: "no-store" });
+				if (!response.ok) {
+					throw new Error(`Proxy error: ${response.status}`);
+				}
+
+				const xmlString = await response.text();
+				const xmlDoc = new DOMParser().parseFromString(xmlString, "text/xml");
+				const { date, rates } = parseRates(xmlDoc);
+
+				bnrDateEl.textContent = date;
+				ratesCountEl.textContent = String(rates.length);
+				renderRates(rates);
+				statusEl.textContent = `Actualizat: ${new Date().toLocaleString("ro-RO")}`;
+			} catch (error) {
+				statusEl.textContent = "Nu am putut incarca datele.";
+				errorEl.hidden = false;
+				errorEl.textContent = "Porneste serverul Node.js pe http://localhost:3000 si incearca din nou.";
+				console.error(error);
+			}
+		}
+
+		refreshBtn.addEventListener("click", loadRates);
+		loadRates();
+	</script>
+</body>
+
+</html>

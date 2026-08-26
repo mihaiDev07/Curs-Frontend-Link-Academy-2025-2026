@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> 1 Bitcoin </h1>
+    <div id="data"></div>
+    <div id="bit"></div>
+
+    <script>
+        // https://www.w3schools.com/xml/ajax_xmlhttprequest_response.asp
+
+        // folosim un proxi  https://cors-anywhere.herokuapp.com/corsdemo
+        // https://cors-anywhere.herokuapp.com
+        let xmlhttp = new XMLHttpRequest();
+        // const url = "https://api.coindesk.com/v1/bpi/currentprice.json";
+        const url = "https://blockchain.info/ticker";
+
+        xmlhttp.onreadystatechange = function () {
+            // console.info('aici', xmlhttp.getAllResponseHeaders());
+            // console.info('aici2', xmlhttp);
+            if (this.readyState == 4 && this.status == 200) {
+                let myArr = JSON.parse(this.responseText);
+                console.log('myArr', myArr.EUR)
+                myFunction2(myArr);
+            }
+        };
+
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+
+        function myFunction2(data) {
+            const now = new Date(); // Data și ora curentă
+            now.setMinutes(now.getMinutes() - 15); // Scade 15 minute
+            const formattedDate = now.toISOString().slice(0, 19).replace("T", " ");
+            let out = "";
+            document.getElementById("data").innerHTML = formattedDate;
+            out += `
+                <ul>
+                <li>EUR: ${data.EUR.last}</li>
+                <li>GBP: ${data.GBP.last}</li>
+                <li>USD: ${data.USD.last}</li>
+                </ul>
+                `
+
+            document.getElementById("bit").innerHTML = out;
+        }
+        function myFunction(data) {
+            let out = "";
+
+            console.log(data.bpi);
+            document.getElementById("data").innerHTML = data.time.updated;
+            out += `
+                <ul>
+                <li>EUR: ${data.bpi.EUR.rate}</li>
+                <li>GBP: ${data.bpi.GBP.rate}</li>
+                <li>USD: ${data.bpi.USD.rate}</li>
+                </ul>
+                `
+
+            document.getElementById("bit").innerHTML = out;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyShop - Cos</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html">MyShop</a>
+            <div class="links">
+                <span id="nav-user" class="muted">Vizitator</span>
+                <a href="cart.html" class="cart-link">Vezi cos <span id="nav-cart-count" class="cart-badge">0</span></a>
+                <a id="nav-admin" href="admin.html" style="display:none;">Admin</a>
+                <a id="nav-login" href="login.html">Login</a>
+                <button id="nav-logout" class="link-btn secondary" style="display:none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Cosul tau</h1>
+        <div id="cartWrap"></div>
+    </main>
+
+    <script src="../javascript/common.js"></script>
+    <script src="../javascript/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicație Clickuri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Numarare Clickuri</h1>
+
+        <div class="button-group">
+            <button id="btn1" class="btn btn-primary">
+                Buton 1
+                <span class="click-count" id="count1">0</span>
+            </button>
+
+            <button id="btn2" class="btn btn-secondary">
+                Buton 2
+                <span class="click-count" id="count2">0</span>
+            </button>
+        </div>
+
+        <div class="info">
+            <p id="message">Se conectează la server...</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

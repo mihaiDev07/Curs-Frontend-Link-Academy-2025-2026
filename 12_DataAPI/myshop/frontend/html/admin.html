@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyShop - Admin</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html">MyShop</a>
+            <div class="links">
+                <span id="nav-user" class="muted">Vizitator</span>
+                <a href="cart.html" class="cart-link">Vezi cos <span id="nav-cart-count" class="cart-badge">0</span></a>
+                <a id="nav-admin" href="admin.html" style="display:none;">Admin</a>
+                <a id="nav-login" href="login.html">Login</a>
+                <button id="nav-logout" class="link-btn secondary" style="display:none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Administrare produse</h1>
+        <div id="adminFlash" class="flash"></div>
+
+        <h2>Adauga produs</h2>
+        <form id="addForm" class="form" style="margin-bottom:18px;">
+            <label for="addNume">Nume</label>
+            <input id="addNume" required />
+
+            <label for="addDescriere">Descriere</label>
+            <textarea id="addDescriere" required></textarea>
+
+            <label for="addPret">Pret</label>
+            <input id="addPret" type="number" step="0.01" required />
+
+            <label for="addPoza">Poza URL</label>
+            <input id="addPoza" type="url" required />
+
+            <label for="addCategorie">Categorie</label>
+            <input id="addCategorie" required />
+
+            <div class="row" style="margin-top:12px;">
+                <button type="submit" class="btn">Adauga</button>
+            </div>
+        </form>
+
+        <h2>Editeaza produs</h2>
+        <form id="editForm" class="form" style="margin-bottom:18px;">
+            <label for="editId">ID produs</label>
+            <input id="editId" type="number" required />
+
+            <label for="editNume">Nume</label>
+            <input id="editNume" />
+
+            <label for="editDescriere">Descriere</label>
+            <textarea id="editDescriere"></textarea>
+
+            <label for="editPret">Pret</label>
+            <input id="editPret" type="number" step="0.01" />
+
+            <label for="editPoza">Poza URL</label>
+            <input id="editPoza" type="url" />
+
+            <label for="editCategorie">Categorie</label>
+            <input id="editCategorie" />
+
+            <div class="row" style="margin-top:12px;">
+                <button type="submit" class="btn">Salveaza editare</button>
+            </div>
+        </form>
+
+        <h2>Produse existente</h2>
+        <div id="adminProducts" class="grid"></div>
+    </main>
+
+    <script src="../javascript/common.js"></script>
+    <script src="../javascript/admin.js"></script>
+</body>
+
+</html>

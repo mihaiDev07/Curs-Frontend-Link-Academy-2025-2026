@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        async function salut(name) {
+            console.log(name, "buna dimineata");
+            console.log(name, "bina ziua");
+            console.log(name, "buna seara");
+        }
+
+        salut("Ion");
+        salut("Dan");
+
+        //  versiunea cu Promise
+        function salut2(name) {
+            return new Promise((resolve) => {
+                console.log(name, "buna dimineata");
+                console.log(name, "bina ziua");
+                console.log(name, "buna seara");
+                resolve();
+            });
+        }
+        salut2("Ion");
+        salut2("Dan");
+
+
+        async function salut3(name) {
+            console.log(name, "buna dimineata3");
+            await console.log(name, "bina ziua3");
+            console.log(name, "buna seara3");
+        }
+
+        salut3("Toma3");
+        salut3("Vlad3");
+
+        //  Versinea cu Promise
+        function salut4(name) {
+            return new Promise((resolve) => {
+                console.log(name, "buna dimineata4");
+                resolve(console.log(name, "bina ziua4"));
+            }).then(() => {
+                console.log(name, "buna seara4");
+            });
+        }
+
+        salut4("Toma4");
+        salut4("Vlad4");
+    </script>
+</body>
+
+</html>

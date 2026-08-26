@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adauga utilizator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Utilizatori</a>
+        <a href="add.html">Adauga utilizator</a>
+    </nav>
+
+    <div class="container">
+
+        <h1>Adauga utilizator</h1>
+
+        <form id="userForm" enctype="multipart/form-data" action="https://httpbin.org/post" method="post">
+
+            <input type="text" id="firstName" placeholder="Prenume" required>
+
+            <input type="text" id="lastName" placeholder="Nume" required>
+
+            <input type="email" id="email" placeholder="Email" required>
+
+            <input type="file" id="image" accept="image/*" required>
+
+            <img id="preview" width="150">
+
+            <button type="submit">Salveaza</button>
+
+        </form>
+
+    </div>
+
+    <script src="js/add.js"></script>
+
+</body>
+
+</html>

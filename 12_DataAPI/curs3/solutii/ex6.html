@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <code>
+            <pre>
+                Ordinea de execuție va fi:
+                1️⃣ "1. Start" (Call Stack)
+                2️⃣ "6. End" (Call Stack)
+                3️⃣ "3. Promise" (Microtask Queue – are prioritate!)
+                4️⃣ "2. Timeout" (Macrotask Queue – primul setTimeout)
+                5️⃣ "5. Timeout 2" (Macrotask Queue – al doilea setTimeout)
+                6️⃣ "4. Click event" (când userul dă click) (Macrotask Queue)
+            </pre>
+        </code>
+    </p>
+    <script>
+        console.log("1. Start");
+
+        // Web API: setTimeout (Macrotask Queue)
+        setTimeout(() => console.log("2. Timeout"), 0);
+
+        // Web API: Promise (Microtask Queue)
+        Promise.resolve().then(() => console.log("3. Promise"));
+
+        // Web API: Event Listener (Macrotask Queue)
+        document.body.addEventListener("click", function () {
+            console.log("4. Click event");
+            // Web API: setTimeout (Macrotask Queue)
+            setTimeout(() => console.log("4.1. Timeout 3"), 0);
+            // Web API: Promise (Microtask Queue)
+            Promise.resolve().then(() => console.log("4.2. Promise 2"));
+        });
+
+        // Web API: setTimeout (Macrotask Queue)
+        setTimeout(() => console.log("5. Timeout 2"), 0);
+
+        console.log("6. End");
+
+    </script>
+</body>
+
+</html>

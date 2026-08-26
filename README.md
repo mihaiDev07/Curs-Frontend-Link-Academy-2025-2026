@@ -10,20 +10,19 @@ It documents my progress from HTML, CSS, and responsive design to JavaScript, AP
 
 | Module | Topic | Main concepts |
 | --- | --- | --- |
-| `1_introducere` | Introduction to web development | Development environment and web project structure |
-| `2_bazeleHTML` | HTML fundamentals | Semantic elements, page structure, links, images, and content |
-| `3_FormHTML` | HTML forms | Inputs, labels, validation, and form structure |
-| `4_bazeleCSS` | CSS fundamentals | Selectors, typography, spacing, and the box model |
-| `5_bazeleDesign` | Web design fundamentals | Layout, visual hierarchy, colors, and reusable styling |
-| `6_ResponsiveDesign` | Responsive design | Flexible layouts, media queries, and mobile-friendly interfaces |
-| `7_javascriptFundamentals` | JavaScript fundamentals | Variables, functions, arrays, events, and DOM manipulation |
-| `8_gitControl` | Git version control | Repositories, commits, branches, and project history |
-| `9_JsProObjectsDebugging` | JavaScript and debugging | Objects, code organization, debugging, and error analysis |
-| `10_DataAPI` | Data and APIs | Fetching, processing, and displaying external data |
-| `11_ModernFrameworks` | Modern frameworks | Component-based development and application structure |
-| `12_DataAPI` | Advanced API exercises | Asynchronous requests, integration, and data-driven interfaces |
-| `13_FullStackProject` | Collaborative full-stack project | React frontend, Express API, authentication, products, and orders |
-| `14_FinalProject` | Final project — Vellora Shop | Full-stack e-commerce development, deployment, and documentation |
+| `01_bazeleHTML` | HTML fundamentals | Semantic elements, page structure, links, images, and content |
+| `02_FormHTML` | HTML forms | Inputs, labels, validation, and form structure |
+| `03_bazeleCSS` | CSS fundamentals | Selectors, typography, spacing, and the box model |
+| `04_bazeleDesign` | Web design fundamentals | Layout, visual hierarchy, colors, and reusable styling |
+| `05_ResponsiveDesign` | Responsive design | Flexible layouts, media queries, and mobile-friendly interfaces |
+| `06_javascriptFundamentals` | JavaScript fundamentals | Variables, functions, arrays, events, and DOM manipulation |
+| `07_gitControl` | Git version control | Repositories, commits, branches, and project history |
+| `08_JsProObjectsDebugging` | JavaScript and debugging | Objects, code organization, debugging, and error analysis |
+| `09_DataAPI` | Data and APIs | Fetching, processing, and displaying external data |
+| `10_ModernFrameworks` | Modern frameworks | Component-based development and application structure |
+| `11_DataAPI` | Advanced API exercises | Asynchronous requests, integration, and data-driven interfaces |
+| `12_FullStackProject` | Collaborative full-stack project | React frontend, Express API, authentication, products, and orders |
+| `13_FinalProject` | Final project — Vellora Shop | Full-stack e-commerce development, deployment, and documentation |
 
 ---
 
@@ -60,20 +59,19 @@ This repository demonstrates my ability to:
 
 ```text
 Curs-Frontend-Link-Academy-2025-2026/
-├── 1_introducere/
-├── 2_bazeleHTML/
-├── 3_FormHTML/
-├── 4_bazeleCSS/
-├── 5_bazeleDesign/
-├── 6_ResponsiveDesign/
-├── 7_javascriptFundamentals/
-├── 8_gitControl/
-├── 9_JsProObjectsDebugging/
-├── 10_DataAPI/
-├── 11_ModernFrameworks/
-├── 12_DataAPI/
-├── 13_FullStackProject/
-├── 14_FinalProject/
+├── 01_bazeleHTML/
+├── 02_FormHTML/
+├── 03_bazeleCSS/
+├── 04_bazeleDesign/
+├── 05_ResponsiveDesign/
+├── 06_javascriptFundamentals/
+├── 07_gitControl/
+├── 08_JsProObjectsDebugging/
+├── 09_DataAPI/
+├── 10_ModernFrameworks/
+├── 11_DataAPI/
+├── 12_FullStackProject/
+├── 13_FinalProject/
 └── README.md
 ```
 
@@ -100,7 +98,7 @@ The course concludes with **Vellora Shop**, a complete full-stack e-commerce app
 
 - [View the live application](https://vellorashop.vercel.app)
 - [View the complete Vellora Shop repository](https://github.com/mihaiDev07/Vellora-Shop)
-- [Read the final-project summary](./14_FinalProject/README.md)
+- [Read the final-project summary](./13_FinalProject/README.md)
 
 ---
 
